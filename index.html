@@ -37,8 +37,7 @@
               <svg class="icon-telefono">
                 <use href="./images/svg/icons.svg#telefono"></use>
               </svg>
-              +52 55 5529 6000</a
-            >
+              +52 55 5529 6000</a>
           </li>
        </ul>
      </nav>
@@ -112,19 +111,21 @@
       </section>
       <!--Segunda Sección-->
       <section class="section pading do">
-        <h2>A qué nos dedicamos</h2>
-        <div class="container">
-          <ul>
-            <li>
-              <img src="images/imagen1.jpg" alt="image1" width="370" />
-            </li>
-            <li>
-              <img src="images/imagen2.jpg" alt="image2" width="370" />
-            </li>
-            <li>
-              <img src="images/imagen3.jpg" alt="image3" width="370" />
-            </li>
-          </ul>
+        <h2 class="services-title">A qué nos dedicamos</h2>
+        <div class="services-items">
+          <!--images-->
+          <figure>
+            <img class="services-img" src="images/imagen1.jpg" alt="image1" width="370" />
+            <figcaption>Aplicaciones de Escritorio</figcaption>
+          </figure>
+          <figure>
+            <img class="services-img" src="images/imagen2.jpg" alt="image2" width="370" />
+            <figcaption>Aplicaciones Moviles</figcaption>
+          </figure>
+          <figure>
+            <img class="services-img" src="images/imagen3.jpg" alt="image3" width="370" />
+            <figcaption>Aplicaciones de Diseño</figcaption>
+          </figure>
         </div>
       </section>
       <!--Tercera Sección-->
@@ -320,50 +321,65 @@
     <!-- Footer y pie de página-->
     <footer class="footer">
       <a class="web" href="">Web Studio</a>
-      <div class="footer-container">
-          <address class="footer-address">
-            <a class="footer-location" href=""
-              >Calz. Ticomán 500, Ciudad de México, CDMX, México</a
-            >
-            <a class="footer-email" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-            <a class="footer-phone" href="tel:+525555296000">+52 55 5529 6000</a>
-          </address>
-        <aside class="footer2">
-          <h3 class="footer2-logo">ENCUENTRENOS EN</h3>
-          <ul class="redes-sociales2">
-            <li>
-              <a class="icon-social" href="#">
-                <svg class="icon-redes2">
-                  <use href="./images/svg/icons.svg#instagram"></use>
+        <div class="footer-container">
+            <address class="footer-address">
+              <a class="footer-location" href=""
+                >Calz. Ticomán 500, Ciudad de México, CDMX, México</a
+              >
+              <a class="footer-email" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+              <a class="footer-phone" href="tel:+525555296000">+52 55 5529 6000</a>
+            </address>
+          <aside class="footer2">
+            <h3 class="footer2-logo">ENCUENTRENOS EN</h3>
+            <ul class="redes-sociales2">
+              <li>
+                <a class="icon-social" href="#">
+                  <svg class="icon-redes2">
+                    <use href="./images/svg/icons.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="icon-social" href="#">
+                  <svg class="icon-redes2">
+                    <use href="./images/svg/icons.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="icon-social" href="#">
+                  <svg class="icon-redes2">
+                    <use href="./images/svg/icons.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="icon-social" href="">
+                  <svg class="icon-redes2">
+                    <use href="./images/svg/icons.svg#linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </aside>
+
+          <div class="aside-container">
+            <h3 class="aside-title">SUSCRÍBASE AL BOLETIN INFORMATIVO</h3>
+            <form>
+              <input class="input-aside" type="email" name="email" placeholder="Correo electrónico">
+              <button class="boton-aside" type="submit">
+                Suscríbase
+                <svg class="icon-telegram">
+                  <use href="./images/SVG/icons.svg#telegram">
+                  </use>
                 </svg>
-              </a>
-            </li>
-            <li>
-              <a class="icon-social" href="#">
-                <svg class="icon-redes2">
-                  <use href="./images/svg/icons.svg#twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="icon-social" href="#">
-                <svg class="icon-redes2">
-                  <use href="./images/svg/icons.svg#facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="icon-social" href="">
-                <svg class="icon-redes2">
-                  <use href="./images/svg/icons.svg#linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </aside>
-      </div>
+              </button>
+            </form>
+          </div>
+
+        </div>
     </footer>
     <!--ventana modal-->
     <div class="backdrop is-hidden" id="data-modal">
@@ -374,6 +390,51 @@
             </use>
           </svg>
         </button>
+        <h3 class="modal-title">Deje sus datos, nos contactaremos con usted</h3>
+        <label class="form-label" for="input-name"> Nombre </label>
+
+        <div class="pos-relative">
+          <input class="form-input" type="text" name="name" id="input-name" required>
+          <svg class="form-icon">
+            <use href="./images/svg/icons.svg#persona"></use>
+          </svg>
+        </div>
+
+        <label class="form-label" for="input-telefono"> Telefono</label>
+        <div class="pos-relative">
+          <input class="form-input" type="text" name="telefono" id="input-telefono" required>
+          <svg class="form-icon">
+            <use href="./images/SVG/icons.svg#tel"></use>
+          </svg>
+        </div>
+
+        <label class="form-label" for="input-email">Email</label>
+        <div class="pos-relative">
+          <input class="form-input" type="email" name="email" id="input-email" required>
+          <svg class="form-icon">
+            <use href="./images/SVG/icons.svg#correo"></use>
+          </svg>
+        </div>
+
+        <div class="pos-relative">
+          <label for="feedback" class="form-label">Comentarios</label>
+          <textarea class="textarea" name="feeback" id="" cols="30" rows="7" placeholder="Introduzca texto"></textarea>
+        </div>
+        
+        <div class="pos-relative">
+          <label class="custom-checkmark-label">
+            <input type="checkbox" id="input-accept-" hidden name="accept-terms" required>
+            <span class="custom-checkmark">
+              <svg class="custom-checkmark-icon">
+                <use href="images/SVG/icons.svg#Checkmark">
+                </use>
+              </svg>
+            </span>
+            Estoy de acuerdo con el boletín informativo y acepto los Términos y Condiciones
+          </label>
+        </div>
+        <button type="submit" class="button-enviar">Enviar</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>

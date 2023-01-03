@@ -1,4 +1,4 @@
-:root {
+:root {5f4fa
   --font-principal: "Roboto";
   --font-secundario: "Raleway";
   --background-black: #21303a;
@@ -254,15 +254,43 @@ header .Headoard .header-contact li .contact {
   top: 945px;
 }
 /*-- segunda seccion --*/
-.do .container ul {
+.do .container {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
 }
-.do .container ul li {
-  list-style: none;
-  width: 360px;
+
+.services-title {
+  font-family: var(--font-principal);
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 55px;
+}
+.services-items {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 100px;
+}
+.services-img {
+  flex-basis: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+figure {
+  position: relative;
+}
+figcaption {
+  text-align: center;
+  padding: 27px;
+  width: 100%;
+  background: rgba(47, 48, 58, 0.8);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  color: #ffffff;
 }
 /*-- tercera seccion --*/
 .chargues-container {
@@ -373,6 +401,7 @@ header .Headoard .header-contact li .contact {
   border-color: var(--color-blue);
   fill: var(--color-blue);
 }
+
 /*--------portafolio--------*/
 .botones .option {
   display: flex;
@@ -509,7 +538,7 @@ footer {
 }
 footer .footer-location {
   display: grid;
-  font-family: "Roboto";
+  font-family: var(--font-principal);
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -534,11 +563,8 @@ address .footer-email,
 .footer-phone:focus {
   color: var(--color-white);
 }
-.footer2 {
-  margin-top: 62px;
-}
 .footer2-logo {
-  font-family: "Roboto";
+  font-family: var(--font-principal);
   font-weight: 700;
   color: var(--color-white);
   margin-bottom: 20px;
@@ -560,11 +586,61 @@ address .footer-email,
 .icons-footer:hover path {
   fill: var(--color-blue);
 }
+
+aside a:hover {
+  background-color: #2196f3;
+}
+.aside-title {
+  font-family: var(--font-principal);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding-bottom: 20px;
+}
+.aside-container {
+  width: 50%;
+  font-family: var(--font-principal);
+}
+.input-aside{
+  box-sizing: border-box;
+  width: 358px;
+  height: 50px;
+  left: 815px;
+  top: 1736px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  color: rgba(255, 255, 255, 0.6);
+  background: #2F303A;
+}
+.boton-aside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  width: 40%;
+  height: 50px;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: #ffffff;
+}
+.icon-telegram {
+  fill: #ffffff;
+  width: 24px;
+  height: 24px;
+}
+
 /** ventana modal**/
 .backdrop.is-hidden {
   visibility: hidden;
   opacity:0;
   pointer-events: none;
+  font-family: var(--font-principal);
 }
 .backdrop {
   position: fixed;
@@ -574,7 +650,7 @@ address .footer-email,
   top: 0;
   left: 0;
   background-color: #00000060;
-  transition:opacity;
+  transition: opacity;
   width: 100%;
   height: 100%;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -582,7 +658,7 @@ address .footer-email,
 .modal {
   position: relative;
   width: 528px;
-  height: 581px;
+  height: 601px;
   background: white;
   padding: 40px;
   max-width: 528px;
@@ -603,4 +679,122 @@ address .footer-email,
   width: 18px;
   height: 18px;
   fill: #000000;
+}
+
+.modal-title {
+  font-family: var(--font-principal);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: var(color-black);
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+.form-label {
+  font-family: var(--font-principal);
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.01em;
+  color: #757575;
+}
+
+.form-input {
+  width: 100%;
+  height: 50px;
+  padding-left: 43px;
+  border: 1px solid #2196f3;
+  border-radius: 6px;
+}
+
+.form-input:hover,
+.form-input:focus {
+  border: 1px solid #2196f3;
+}
+
+.form-icon {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  pointer-events: none;
+}
+
+.pos-relative {
+  position: relative;
+}
+
+.textarea {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 16px 12px;
+  resize: none;
+  border: 1px solid #2196f3;
+  border-radius: 4px;
+}
+
+.textarea:hover,
+.textarea:focus {
+  border: 1px solid #2196f3;
+}
+
+.custom-checkmark-label {
+  display: block;
+  font-size: 14px;
+  line-height: 24px;
+  padding: 16px 1px 0px 24px;
+  color: #757575;
+}
+
+.custom-checkmark {
+  position: absolute;
+  left: 0;
+  padding: 2px;
+  width: 16px;
+  height: 15px;
+  border: 2px solid #212121;
+  border-radius: 2px;
+}
+
+.custom-checkmark-label
+  input[type="checkbox"]:checked
+  + .custom-checkmark:hover {
+  background: #2196f3;
+  border: none;
+}
+
+.custom-checkmark-icon {
+  width: 30px;
+  height: 30px;
+  display: none;
+  fill: #ffffff;
+}
+
+.custom-checkmark-label
+  input[type="checkbox"]:checked
+  + .custom-checkmark
+  .custom-checkmark-icon {
+  display: inline;
+}
+
+.button-enviar {
+  width: 261px;
+  height: 50px;
+  background-color: #2196f3;
+  font-family: var(--font-principal);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+  border-radius: 4px;
+  border: 0;
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
 }
