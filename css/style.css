@@ -536,6 +536,15 @@ footer {
   justify-content: flex-start;
   gap: 20px;
 }
+.web2 {
+  font-family: var(--font-secundario), sans-serif;
+  font-style: normal;
+  color: var(--color-blue);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
 footer .footer-location {
   display: grid;
   font-family: var(--font-principal);
@@ -568,7 +577,11 @@ address .footer-email,
   font-weight: 700;
   color: var(--color-white);
   margin-bottom: 20px;
-}
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+ }
 .redes-sociales2 {
   display: flex;
   align-items: center;
@@ -603,6 +616,12 @@ aside a:hover {
 .aside-container {
   width: 50%;
   font-family: var(--font-principal);
+}
+.linea {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 20px;
 }
 .input-aside{
   box-sizing: border-box;
@@ -700,29 +719,27 @@ aside a:hover {
   letter-spacing: 0.01em;
   color: #757575;
 }
-
 .form-input {
   width: 100%;
   height: 50px;
   padding-left: 43px;
-  border: 1px solid #2196f3;
+  border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 6px;
 }
-
 .form-input:hover,
 .form-input:focus {
   border: 1px solid #2196f3;
 }
-
+.form-icon:hover {
+  fill: var(--color-blue);
+}
 .form-icon {
   width: 25px;
   height: 25px;
   position: absolute;
   top: 15px;
   left: 15px;
-  pointer-events: none;
 }
-
 .pos-relative {
   position: relative;
 }
@@ -733,7 +750,7 @@ aside a:hover {
   width: 100%;
   padding: 16px 12px;
   resize: none;
-  border: 1px solid #2196f3;
+  border: 1px solid rgba(21, 187, 60, 0.2);
   border-radius: 4px;
 }
 
@@ -796,5 +813,5 @@ aside a:hover {
   border: 0;
   display: block;
   margin: 0 auto;
-  margin-top: 20px;
+  margin-top: 0px;
 }
